@@ -19,13 +19,13 @@ const Header = ({ toggleSidebar }) => {
         <NotificationDropdown />
         <div className="flex items-center space-x-2">
           <img
-            src="https://placehold.co/40x40/FF5C85/FFF?text=JD"
+            src="https://placehold.co/40x40/FF5C85/FFF?text=MS"
             alt="User Avatar"
             className="w-10 h-10 rounded-full object-cover border-4 border-indigo-500"
           />
           <div className="hidden sm:flex items-center px-3 py-2 bg-gray-700 rounded-lg bg-indigo-600">
             <span className="text-sm font-semibold text-white-300">
-              Welcome, John Doe!
+              Welcome, Menna Saad!
             </span>
           </div>
           <button
