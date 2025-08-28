@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Elevvo-Front-End-Internship_Multi-Page-DashboardTask/static/css/main.7323b0a4.css",
+    "main.js": "/Elevvo-Front-End-Internship_Multi-Page-DashboardTask/static/js/main.85b1c55e.js",
+    "static/js/453.eacb2ae6.chunk.js": "/Elevvo-Front-End-Internship_Multi-Page-DashboardTask/static/js/453.eacb2ae6.chunk.js",
+    "index.html": "/Elevvo-Front-End-Internship_Multi-Page-DashboardTask/index.html",
+    "main.7323b0a4.css.map": "/Elevvo-Front-End-Internship_Multi-Page-DashboardTask/static/css/main.7323b0a4.css.map",
+    "main.85b1c55e.js.map": "/Elevvo-Front-End-Internship_Multi-Page-DashboardTask/static/js/main.85b1c55e.js.map",
+    "453.eacb2ae6.chunk.js.map": "/Elevvo-Front-End-Internship_Multi-Page-DashboardTask/static/js/453.eacb2ae6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7323b0a4.css",
+    "static/js/main.85b1c55e.js"
+  ]
+}
