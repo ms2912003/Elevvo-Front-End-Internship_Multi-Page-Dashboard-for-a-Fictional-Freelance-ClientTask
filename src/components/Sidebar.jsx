@@ -1,8 +1,9 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { MdDashboard, MdWork, MdSettings } from 'react-icons/md';
+import { HiChevronDoubleLeft, HiChevronDoubleRight } from 'react-icons/hi';
 
-const Sidebar = ({ isSidebarOpen }) => {
+const Sidebar = ({ isSidebarOpen, toggleSidebar }) => {
   const location = useLocation();
 
   const links = [
@@ -14,15 +15,25 @@ const Sidebar = ({ isSidebarOpen }) => {
   return (
     <aside
       className={`
-        bg-gray-900 text-white w-64 p-4
+        bg-gray-900 text-white h-screen p-4
         fixed inset-y-0 left-0 z-50 transform
-        transition-transform duration-300 ease-in-out
-        ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'}
-        md:relative md:translate-x-0
+        transition-all duration-300 ease-in-out
+        ${isSidebarOpen ? 'w-64' : 'w-20'}
       `}
     >
-      <div className="flex items-center space-x-4 mb-8">
-        <span className="text-xl font-bold">Freelance</span>
+      <button
+        onClick={toggleSidebar}
+        className="absolute -right-3 top-6 bg-gray-800 rounded-full p-1 hover:bg-gray-700"
+      >
+        {isSidebarOpen ? (
+          <HiChevronDoubleLeft className="h-5 w-5 text-white" />
+        ) : (
+          <HiChevronDoubleRight className="h-5 w-5 text-white" />
+        )}
+      </button>
+
+      <div className="flex items-center space-x-2 mb-8">
+        <span className="text-xl font-bold">{isSidebarOpen ? 'Freelance' : ' '}</span>
       </div>
 
       <nav className="mt-8">
@@ -38,7 +49,7 @@ const Sidebar = ({ isSidebarOpen }) => {
                 `}
               >
                 <link.icon className={`h-5 w-5 ${link.color}`} />
-                <span className="ml-2">{link.text}</span>
+                {isSidebarOpen && <span className="ml-2">{link.text}</span>}
               </Link>
             </li>
           ))}
